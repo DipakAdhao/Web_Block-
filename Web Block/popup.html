@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WEB BLOCK</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            padding: 20px;
+            margin: 0;
+        }
+        .popup-box {
+            width: 400px;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #444;
+            margin-top: 0;
+        }
+        input[type="text"], input[type="time"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            width: calc(50% - 10px);
+            padding: 10px;
+            margin: 10px 5px 20px 5px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #blacklist-button {
+            background-color: #f44336; /* Red */
+            color: white;
+        }
+        #blacklist-button:hover {
+            background-color: #d32f2f;
+        }
+        #whitelist-button {
+            background-color: #4caf50; /* Green */
+            color: white;
+        }
+        #whitelist-button:hover {
+            background-color: #388e3c;
+        }
+        h2 {
+            margin-top: 20px;
+        }
+        #blocked-sites {
+            list-style-type: none;
+            padding: 0;
+        }
+        #blocked-sites li {
+            background-color: #fff;
+            margin: 10px 0;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="popup-box">
+        <h1>WEB BLOCK</h1>
+        <input type="text" id="blacklist-url" placeholder="Enter URL to block">
+        <input type="time" id="schedule-start" placeholder="Start Time">
+        <input type="time" id="schedule-end" placeholder="End Time">
+        <button id="blacklist-button">Block</button>
+        <button id="whitelist-button">Unblock</button>
+        <h2>Blocked Sites</h2>
+        <ul id="blocked-sites"></ul>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>

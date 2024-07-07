@@ -1,0 +1,31 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+#title {
+  color: #333;
+}
+
+#description {
+  color: #666;
+}
+
+#blacklist-url {
+  width: 200px;
+}
+
+button {
+  margin-top: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+#schedule-section {
+  margin-top: 20px;
+}
+
+input[type="datetime-local"] {
+  width: 200px;
+  margin-right: 10px;
+}
